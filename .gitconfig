@@ -1,0 +1,24 @@
+[core]
+        filemode = false
+        autocrlf = input
+        packedGitLimit = 512m 
+        packedGitWindowSize = 512m 
+        compression = 0
+[pack]
+        deltaCacheSize = 2047m 
+        packSizeLimit = 2047m 
+        windowMemory = 2047m
+[user]
+        email = nlojas@paymentus.com
+        name = nlojas
+[pull]
+        rebase = true
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
