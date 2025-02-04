@@ -1,7 +1,9 @@
 #!/bin/bash
 
+cd `dirname $0`
+
 sudo apt-get update
-sudo apt-get install -y build-essential curl wget python3 make unzip zip ripgrep
+sudo apt-get install -y build-essential curl wget python3 make unzip zip ripgrep net-stat
 
 # install nvm
 if ! nvm ls; then
@@ -13,3 +15,5 @@ sudo snap install nvim --classic
 cp -r --update=none ../nvim ~/.config
 
 source ~/.bashrc
+
+npm install -g neovim
