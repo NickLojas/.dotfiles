@@ -3,7 +3,7 @@
 cd `dirname $0`
 
 sudo apt-get update
-sudo apt-get install -y build-essential curl wget python3 make unzip zip ripgrep
+sudo apt-get install -y build-essential curl wget python3 make unzip zip ripgrep net-tools
 
 # install nvm
 if ! nvm ls; then
