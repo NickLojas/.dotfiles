@@ -927,7 +927,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'javascript', 'typescript', 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'javascript', 'typescript', 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'gitcommit' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
@@ -1003,6 +1003,12 @@ require('lazy').setup({
     },
   },
 })
+
+-- vim.cmd [[
+-- set runtimepath^=~/.vim runtimepath+=~/.vim/after
+-- let &packpath=&runtimepath
+-- source ~/.vimrc
+-- ]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
