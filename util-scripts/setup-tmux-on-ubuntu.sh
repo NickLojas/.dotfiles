@@ -5,7 +5,7 @@ cd `dirname $0`
 sudo apt install tmux -y
 
 # setup tmux
-cp -r --update=none ../tmux ~/.config
+cp -r -n ../tmux ~/.config
 tmux source ~/.config/tmux/tmux.conf
 
 source ~/.bashrc

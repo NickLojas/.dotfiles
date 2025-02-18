@@ -4,7 +4,7 @@ cd `dirname $0`
 
 # setup nvim
 sudo snap install nvim --classic
-cp -r --update=none ../nvim ~/.config
+cp -r -n ../nvim ~/.config
 
 source ~/.bashrc
 
